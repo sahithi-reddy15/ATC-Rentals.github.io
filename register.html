@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | ATC Rentals</title>
+
+    <link rel="shortcut icon" href="./images/logo1.gif">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header class="headerNav">
+    <div class="header">
+            <div class="container" > 
+                <!-- logo -->
+                <a href="./index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+                
+                <ul>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <br>
+    
+    <div class="navigation">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+             <li><a href="./compactCar.html">COMPACT CAR</a></li>
+            <li><a href="./midsizeCar.html">MID-SIZE CAR</a></li>
+            <li><a href="./product.luxuryCar.html">LUXURY CAR</a></li>
+             <li><a href="./contact.html">CONTACT US</a></li>
+         </ul>
+    </div>
+    
+</header>
+
+<!-- CONTENT -->
+<body class="register">
+   <h1 id="registerTitle">Register</h1>
+   <br>
+   <div class='registerContainer'>
+        <form id="formRegister">
+            <label for="name">Name :</label>
+            <br>
+            <input type="text" id="txtName">
+            <br>
+
+            <label for="email">Email :</label>
+            <br>
+            <input type="text" id="txtEmail">
+            <br>
+
+            <label for="gender">Gender :</label>
+            <br>
+            <input type="radio" name="gender" class="rbGender"><label for="rbMale" class="rbMale">Male</label>
+            <input type="radio" name="gender" class="rbGender"><label for="rbFemale">Female</label>
+            <br>
+
+            <label for="city">City :</label>
+            <br>
+            <select name="city" id="selCity">
+                <option value="none" selected disabled hidden> 
+                    Select an Option 
+                </option> 
+                <option value="jakarta">Jakarta</option>
+                <option value="bandarLampung">Bandar Lampung</option>
+                <option value="tangerang">Tangerang</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+
+            <label for="address">Address :</label>
+            <br>
+            <textarea name="address" id="txtAddress" cols="30" rows="4"></textarea>
+            <br>
+
+            <div id="registBtn">
+                <button id="btnRegister" class="submitButton">Register</button>
+            </div>
+            
+    </form>
+</html>

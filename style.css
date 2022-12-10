@@ -1,0 +1,439 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 50x; 
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 200px; /* footer's height */
+    clear: both;
+}
+  
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.headerNav{
+    background-color: white;
+}
+
+
+/* --- HEADER --- */
+.header{
+    /* border: 1px solid; */
+}
+
+.logo{
+    /* border: 1px solid; */
+    width: 200px;
+    height: fit-content;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.header ul{
+    /* border: 1px solid; */
+    float: right;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+.header ul li{
+    /* border: 1px solid; */
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.header ul li a{
+    /* border: 1px solid; */
+    color: white;
+    padding: 7px 25px 7px 25px;
+    background-color: #000000;
+}
+
+.container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* --- HEADER - NAVIGATION --- */
+.navigation{
+    width: 100%;
+    background-color: #000000;;
+    height: 38px;
+    
+}
+
+.navigation ul{
+    list-style: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation ul li{
+    float: left;
+    display: block;
+}
+
+.navigation ul li a{
+    width: 150px;
+    color: white;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.navigation ul li a:hover{
+    background-color: #666699 ;
+}
+
+.navigation ul li ul{
+    background-color: #333333;
+}
+
+.navigation ul li ul li{
+    float: none;
+}
+
+.navigation ul li ul{
+    display: none;
+}
+
+.navigation ul li:hover ul{
+    display: block;
+}
+
+.navigation .active{
+    background-color: #666699;
+    color: white;
+}
+
+
+
+/* --- INDEX (HOME) - CONTENT --- */
+.home{
+    background-image: url("./images/bgimage.jpeg");
+    background-attachment: relative;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 300px;
+}
+
+.home h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 50px;
+    
+}
+
+.home #difColor{
+    color: #4d4d4d;
+}
+
+.home h2{
+    color: white;
+    background-color: #4d4d4d;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    max-width: 565px;
+    text-align: center;
+}
+
+.home .startContainer{
+    text-align: center;
+}
+
+.home #startBtn {
+    background-color:#666699;
+    font-size: large;
+    color: white;
+    border: white solid;
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+
+
+/* --- LOGIN - CONTENT --- */
+.login{
+    text-align: center;
+}
+
+.login #loginTitle{
+    text-align: center;
+    margin-top: 50px; 
+    margin-bottom: 20px;  
+}
+
+.login #formLogin label{
+    font-weight: bold;
+}
+
+.login input[type='text']{
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.login input[type='password']{
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.submitButton{
+    background-color: #666699;
+    font-size: large;
+    color: white;
+    border: white solid;
+    padding: 7px 25px 7px 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+.login h3{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.login h3 a{
+    color:#666699;
+}
+
+
+
+/* --- REGISTER - CONTENT --- */
+.registerContainer{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+}
+
+.register #registerTitle{
+    text-align: center;
+    margin-top: 50px; 
+    margin-bottom: 20px;  
+}
+
+.register #formRegister label{
+    font-weight: bold;
+    text-align: left;
+}
+
+.register #formRegister input[type='text']{
+    border: none;
+    border-bottom: 1px solid;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.register #formRegister input[type='radio']{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+}
+
+.rbMale{
+    margin-right: 20px;
+}
+
+.register #formRegister select{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.register #formRegister textarea{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.register #registBtn{
+    margin-top: 20px;
+    text-align: center;
+}
+/* --- CONTACT - CONTENT --- */
+.contact h1{
+    margin-top: 50px; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.contact #getInTouch label{
+    font-weight: bold;
+}
+
+.contact .formContainer{
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    max-width: 100%;
+    overflow: hidden;
+    float: left;
+    background-color: #f8f8f8;
+}
+
+.contact .identityContainer{
+    float: left;
+    width: 300px;
+    text-align: left;
+    margin-right: 80px;
+}
+
+.contact #getInTouch input[type='text']{
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+    
+    background-color: #f8f8f8;
+}
+
+.contact .messageContainer{
+    float: left;
+    width: 300px;
+}
+
+.contact textarea{
+    height: 230px;
+    width: 100%;
+    
+}
+
+.sendButton {
+    background-color: #666699;
+    font-size: large;
+    color: white;
+    border: white solid;
+    padding: 15px 25px 15px 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    margin-left: 100px;
+    margin-top: 15px;
+} 
+
+.contact .contactUs{
+    float: left;
+    width: 400px;
+    margin-left: 100px;
+    overflow: hidden;
+}
+
+.contact .contactUs p{
+    padding-top: 35px;
+    font-weight: bold;
+}
+
+.contact .contactUs a{
+    color: #666699;
+}
+
+
+
+
+
+
+.campus-col1{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.campus-col1 img{
+    width: 90%;
+    display:block;
+    border-radius: 10px;
+    
+}
+.layer1{
+    background: transparent;
+    height: 100%;
+    width: 90%;
+    position:absolute;
+    top: 0;
+    left:0;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.layer1:hover{
+    background:rgba(0, 0, 0, 0.312);
+}
+.layer1 h3{
+    width: 100%;
+    font-weight: 300;
+    color: #fff;
+    font-size: 23px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.layer1:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col1 p1{
+    text-align: center;
+}
